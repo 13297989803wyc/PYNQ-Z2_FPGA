@@ -1,0 +1,117 @@
+15:38:08 **** Auto Build of configuration Debug for project udp_sever_bsp_xuartlite_intr_tapp_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xuartlite_intr_tapp_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartlite_intr_tapp_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../udp_sever_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartlite_intr_tapp_example.d" -MT"src/xuartlite_intr_tapp_example.o" -o "src/xuartlite_intr_tapp_example.o" "../src/xuartlite_intr_tapp_example.c"
+../src/xuartlite_intr_tapp_example.c: In function 'main':
+../src/xuartlite_intr_tapp_example.c:8:9: warning: implicit declaration of function 'uart232_init' [-Wimplicit-function-declaration]
+  status=uart232_init(&uart232_inst,UART232_ID,&intc,INTC_ID,UART232_INTC_ID);
+         ^~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:8:23: error: 'uart232_inst' undeclared (first use in this function)
+  status=uart232_init(&uart232_inst,UART232_ID,&intc,INTC_ID,UART232_INTC_ID);
+                       ^~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:8:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/xuartlite_intr_tapp_example.c:8:36: error: 'UART232_ID' undeclared (first use in this function)
+  status=uart232_init(&uart232_inst,UART232_ID,&intc,INTC_ID,UART232_INTC_ID);
+                                    ^~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:8:48: error: 'intc' undeclared (first use in this function); did you mean 'int'?
+  status=uart232_init(&uart232_inst,UART232_ID,&intc,INTC_ID,UART232_INTC_ID);
+                                                ^~~~
+                                                int
+../src/xuartlite_intr_tapp_example.c:8:53: error: 'INTC_ID' undeclared (first use in this function)
+  status=uart232_init(&uart232_inst,UART232_ID,&intc,INTC_ID,UART232_INTC_ID);
+                                                     ^~~~~~~
+../src/xuartlite_intr_tapp_example.c:8:61: error: 'UART232_INTC_ID' undeclared (first use in this function)
+  status=uart232_init(&uart232_inst,UART232_ID,&intc,INTC_ID,UART232_INTC_ID);
+                                                             ^~~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:9:17: error: 'uart_init_success' undeclared (first use in this function)
+     if (status!=uart_init_success)
+                 ^~~~~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:14:5: error: 'ERROR_Buffer' undeclared (first use in this function)
+     ERROR_Buffer[0]='e';
+     ^~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:20:5: error: 'Send_NUM' undeclared (first use in this function)
+     Send_NUM=0;
+     ^~~~~~~~
+../src/xuartlite_intr_tapp_example.c:21:5: error: 'Recv_NUM' undeclared (first use in this function)
+     Recv_NUM=0;
+     ^~~~~~~~
+../src/xuartlite_intr_tapp_example.c:23:5: warning: implicit declaration of function 'XUartLite_Recv' [-Wimplicit-function-declaration]
+     XUartLite_Recv(&uart232_inst,Recv_Buffer,Buffer_Size);
+     ^~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:23:34: error: 'Recv_Buffer' undeclared (first use in this function)
+     XUartLite_Recv(&uart232_inst,Recv_Buffer,Buffer_Size);
+                                  ^~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:23:46: error: 'Buffer_Size' undeclared (first use in this function)
+     XUartLite_Recv(&uart232_inst,Recv_Buffer,Buffer_Size);
+                                              ^~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c: At top level:
+../src/xuartlite_intr_tapp_example.c:54:29: error: unknown type name 'XIntc'
+ int UartLiteSetupIntrSystem(XIntc *IntcInstancePtr, XUartLite *UartLiteInstPtr, u16 UartLiteIntrId){
+                             ^~~~~
+../src/xuartlite_intr_tapp_example.c:54:53: error: unknown type name 'XUartLite'
+ int UartLiteSetupIntrSystem(XIntc *IntcInstancePtr, XUartLite *UartLiteInstPtr, u16 UartLiteIntrId){
+                                                     ^~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:54:81: error: unknown type name 'u16'
+ int UartLiteSetupIntrSystem(XIntc *IntcInstancePtr, XUartLite *UartLiteInstPtr, u16 UartLiteIntrId){
+                                                                                 ^~~
+../src/xuartlite_intr_tapp_example.c:172:20: error: unknown type name 'XUartLite'
+ int  uart232_init (XUartLite * uart232_inst,u16 uart_ID,XIntc * intc,u16 intc_ID,u8 uart232_intc_ID)
+                    ^~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:172:45: error: unknown type name 'u16'
+ int  uart232_init (XUartLite * uart232_inst,u16 uart_ID,XIntc * intc,u16 intc_ID,u8 uart232_intc_ID)
+                                             ^~~
+../src/xuartlite_intr_tapp_example.c:172:57: error: unknown type name 'XIntc'
+ int  uart232_init (XUartLite * uart232_inst,u16 uart_ID,XIntc * intc,u16 intc_ID,u8 uart232_intc_ID)
+                                                         ^~~~~
+../src/xuartlite_intr_tapp_example.c:172:70: error: unknown type name 'u16'
+ int  uart232_init (XUartLite * uart232_inst,u16 uart_ID,XIntc * intc,u16 intc_ID,u8 uart232_intc_ID)
+                                                                      ^~~
+../src/xuartlite_intr_tapp_example.c:172:82: error: unknown type name 'u8'
+ int  uart232_init (XUartLite * uart232_inst,u16 uart_ID,XIntc * intc,u16 intc_ID,u8 uart232_intc_ID)
+                                                                                  ^~
+../src/xuartlite_intr_tapp_example.c: In function 'uart232_SendHandler':
+../src/xuartlite_intr_tapp_example.c:213:2: error: 'Send_NUM' undeclared (first use in this function)
+  Send_NUM=EventData;
+  ^~~~~~~~
+../src/xuartlite_intr_tapp_example.c:214:16: error: 'Buffer_Size' undeclared (first use in this function)
+  if(EventData==Buffer_Size)
+                ^~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:216:21: error: 'uart232_inst' undeclared (first use in this function)
+     XUartLite_Recv(&uart232_inst,Recv_Buffer,Buffer_Size);//当发送完成后，开始接收数据
+                     ^~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:216:34: error: 'Recv_Buffer' undeclared (first use in this function)
+     XUartLite_Recv(&uart232_inst,Recv_Buffer,Buffer_Size);//当发送完成后，开始接收数据
+                                  ^~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c: In function 'uart232_RECVHandler':
+../src/xuartlite_intr_tapp_example.c:221:2: error: 'Recv_NUM' undeclared (first use in this function)
+  Recv_NUM=EventData;
+  ^~~~~~~~
+../src/xuartlite_intr_tapp_example.c:223:17: error: 'Buffer_Size' undeclared (first use in this function)
+  if (EventData==Buffer_Size)
+                 ^~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:228:6: error: 'Send_Buffer' undeclared (first use in this function)
+      Send_Buffer[index]=Recv_Buffer[index];
+      ^~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:228:25: error: 'Recv_Buffer' undeclared (first use in this function)
+      Send_Buffer[index]=Recv_Buffer[index];
+                         ^~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:230:5: warning: implicit declaration of function 'XUartLite_Send' [-Wimplicit-function-declaration]
+     XUartLite_Send(&uart232_inst,Send_Buffer,Buffer_Size);
+     ^~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:230:21: error: 'uart232_inst' undeclared (first use in this function)
+     XUartLite_Send(&uart232_inst,Send_Buffer,Buffer_Size);
+                     ^~~~~~~~~~~~
+At top level:
+../src/xuartlite_intr_tapp_example.c:219:13: warning: 'uart232_RECVHandler' defined but not used [-Wunused-function]
+ static void uart232_RECVHandler(void *CallBackRef, unsigned int EventData)
+             ^~~~~~~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:211:13: warning: 'uart232_SendHandler' defined but not used [-Wunused-function]
+ static void uart232_SendHandler(void *CallBackRef, unsigned int EventData)
+             ^~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/xuartlite_intr_tapp_example.o] Error 1
+
+15:38:09 Build Finished (took 1s.517ms)
+

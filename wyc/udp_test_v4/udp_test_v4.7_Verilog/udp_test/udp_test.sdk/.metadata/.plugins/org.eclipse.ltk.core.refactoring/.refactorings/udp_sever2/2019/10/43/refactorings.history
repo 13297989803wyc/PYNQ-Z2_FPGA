@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;udp_sever2/src/helloworld.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="main.c" stamp="1571564528276" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;udp_sever2/src/software/LiDARReader&apos; to &apos;LiDARReader.h&apos;" description="Rename resource &apos;LiDARReader&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/software/LiDARReader" name="LiDARReader.h" stamp="1571568149549" updateReferences="true"/>
+</session>

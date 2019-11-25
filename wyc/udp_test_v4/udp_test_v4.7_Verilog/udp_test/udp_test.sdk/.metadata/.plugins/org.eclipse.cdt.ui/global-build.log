@@ -1,0 +1,49 @@
+20:26:05 **** Incremental Build of configuration Debug for project wyc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/software/pointSplice.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/software/pointSplice.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/software/pointSplice.d" -MT"src/software/pointSplice.o" -o "src/software/pointSplice.o" "../src/software/pointSplice.c"
+../src/software/pointSplice.c: In function 'pointSplice2':
+../src/software/pointSplice.c:80:3: warning: implicit declaration of function 'ledsON' [-Wimplicit-function-declaration]
+   ledsON(0x0f);
+   ^~~~~~
+../src/software/pointSplice.c:83:3: warning: implicit declaration of function 'ledsOFF' [-Wimplicit-function-declaration]
+   ledsOFF(0x01);
+   ^~~~~~~
+../src/software/pointSplice.c: In function 'pointSpliceMask':
+../src/software/pointSplice.c:115:5: warning: implicit declaration of function 'queueLength'; did you mean 'pQueueLength'? [-Wimplicit-function-declaration]
+  if(queueLength()>0){
+     ^~~~~~~~~~~
+     pQueueLength
+../src/software/pointSplice.c:117:3: warning: implicit declaration of function 'deQueue'; did you mean 'pDeQueue'? [-Wimplicit-function-declaration]
+   deQueue(&tempPackage0);
+   ^~~~~~~
+   pDeQueue
+../src/software/pointSplice.c:118:3: warning: implicit declaration of function 'packageFilter' [-Wimplicit-function-declaration]
+   packageFilter(&tempPackage0);
+   ^~~~~~~~~~~~~
+'Finished building: ../src/software/pointSplice.c'
+' '
+'Building target: wyc.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "wyc.elf"  ./src/software/LiDARReader.o ./src/software/UAVDataRead.o ./src/software/myMath.o ./src/software/packageQueue.o ./src/software/pointQueue.o ./src/software/pointSplice.o ./src/software/pointsPackage.o ./src/software/preProcess.o ./src/software/sys_watch.o  ./src/hardware/SDcardRW.o ./src/hardware/Uartlite.o ./src/hardware/leds.o ./src/hardware/myTimer.o ./src/hardware/sys_intr.o ./src/hardware/user_udp.o  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: wyc.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size wyc.elf  |tee "wyc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188560	   3576	2152768	2344904	 23c7c8	wyc.elf
+'Finished building: wyc.elf.size'
+' '
+20:26:26 **** Incremental Build of configuration Debug for project wyc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:30:35 **** Incremental Build of configuration Debug for project wyc ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

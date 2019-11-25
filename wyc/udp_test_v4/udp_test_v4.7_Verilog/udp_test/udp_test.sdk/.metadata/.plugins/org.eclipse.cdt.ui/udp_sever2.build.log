@@ -1,0 +1,16 @@
+21:19:18 **** Auto Build of configuration Debug for project udp_sever2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/software/LiDARReader.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/software/LiDARReader.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../udp_sever2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/software/LiDARReader.d" -MT"src/software/LiDARReader.o" -o "src/software/LiDARReader.o" "../src/software/LiDARReader.c"
+In file included from ../src/software/LiDARReader.c:8:
+../src/software/LiDARReader.h:11:10: fatal error: lwip/err.h: No such file or directory
+ #include "lwip/err.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/software/subdir.mk:20: src/software/LiDARReader.o] Error 1
+
+21:19:18 Build Finished (took 527ms)
+

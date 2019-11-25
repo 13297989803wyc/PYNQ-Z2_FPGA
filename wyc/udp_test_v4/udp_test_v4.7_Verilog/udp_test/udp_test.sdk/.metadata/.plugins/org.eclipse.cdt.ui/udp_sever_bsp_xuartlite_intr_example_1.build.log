@@ -1,0 +1,47 @@
+13:35:12 **** Auto Build of configuration Debug for project udp_sever_bsp_xuartlite_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xuartlite_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartlite_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../udp_sever_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartlite_intr_example.d" -MT"src/xuartlite_intr_example.o" -o "src/xuartlite_intr_example.o" "../src/xuartlite_intr_example.c"
+../src/xuartlite_intr_example.c:102:2: error: unknown type name 'XIntc'
+  XIntc InterruptController;     /* The instance of the Interrupt Controller */
+  ^~~~~
+../src/xuartlite_intr_example.c: In function 'SetupInterruptSystem':
+../src/xuartlite_intr_example.c:347:11: warning: implicit declaration of function 'XIntc_Initialize'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+           ^~~~~~~~~~~~~~~~
+           XUartLite_Initialize
+../src/xuartlite_intr_example.c:72:33: error: 'XPAR_INTC_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_XSLCR_0_DEVICE_ID'?
+ #define INTC_DEVICE_ID          XPAR_INTC_0_DEVICE_ID
+                                 ^~~~~~~~~~~~~~~~~~~~~
+../src/xuartlite_intr_example.c:347:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+../src/xuartlite_intr_example.c:72:33: note: each undeclared identifier is reported only once for each function it appears in
+ #define INTC_DEVICE_ID          XPAR_INTC_0_DEVICE_ID
+                                 ^~~~~~~~~~~~~~~~~~~~~
+../src/xuartlite_intr_example.c:347:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+../src/xuartlite_intr_example.c:358:11: warning: implicit declaration of function 'XIntc_Connect' [-Wimplicit-function-declaration]
+  Status = XIntc_Connect(&InterruptController, UARTLITE_INT_IRQ_ID,
+           ^~~~~~~~~~~~~
+../src/xuartlite_intr_example.c:370:11: warning: implicit declaration of function 'XIntc_Start' [-Wimplicit-function-declaration]
+  Status = XIntc_Start(&InterruptController, XIN_REAL_MODE);
+           ^~~~~~~~~~~
+../src/xuartlite_intr_example.c:370:45: error: 'XIN_REAL_MODE' undeclared (first use in this function)
+  Status = XIntc_Start(&InterruptController, XIN_REAL_MODE);
+                                             ^~~~~~~~~~~~~
+../src/xuartlite_intr_example.c:378:2: warning: implicit declaration of function 'XIntc_Enable' [-Wimplicit-function-declaration]
+  XIntc_Enable(&InterruptController, UARTLITE_INT_IRQ_ID);
+  ^~~~~~~~~~~~
+../src/xuartlite_intr_example.c:389:27: error: 'XIntc_InterruptHandler' undeclared (first use in this function); did you mean 'Xil_InterruptHandler'?
+     (Xil_ExceptionHandler)XIntc_InterruptHandler,
+                           ^~~~~~~~~~~~~~~~~~~~~~
+                           Xil_InterruptHandler
+make: *** [src/subdir.mk:23: src/xuartlite_intr_example.o] Error 1
+
+13:35:14 Build Finished (took 2s.281ms)
+

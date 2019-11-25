@@ -1,0 +1,38 @@
+14:15:11 **** Build of configuration Debug for project udp_client ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../udp_sever_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../udp_sever_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../udp_sever_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building file: ../src/user_udp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/user_udp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../udp_sever_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/user_udp.d" -MT"src/user_udp.o" -o "src/user_udp.o" "../src/user_udp.c"
+'Finished building: ../src/user_udp.c'
+' '
+'Building target: udp_client.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../udp_sever_bsp/ps7_cortexa9_0/lib -o "udp_client.elf"  ./src/helloworld.o ./src/platform.o ./src/sys_intr.o ./src/user_udp.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: udp_client.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size udp_client.elf  |tee "udp_client.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107176	   3424	2152768	2263368	 228948	udp_client.elf
+'Finished building: udp_client.elf.size'
+' '
+
+14:15:19 Build Finished (took 8s.447ms)
+

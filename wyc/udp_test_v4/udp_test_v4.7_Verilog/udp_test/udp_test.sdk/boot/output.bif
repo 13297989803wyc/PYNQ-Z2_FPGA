@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\vivado\PRO\udp_test_v4.7_Verilog\udp_test\udp_test.sdk\fsbl\Debug\fsbl.elf
+	D:\vivado\PRO\udp_test_v4.7_Verilog\udp_test\udp_test.sdk\system_wrapper_hw_platform_1\system_wrapper.bit
+	D:\vivado\PRO\udp_test_v4.7_Verilog\udp_test\udp_test.sdk\Lidar3Dbuild\Debug\Lidar3Dbuild.elf
+}

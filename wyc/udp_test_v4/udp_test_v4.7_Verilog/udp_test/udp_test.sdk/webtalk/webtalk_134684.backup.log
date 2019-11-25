@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Sat Nov  9 15:42:49 2019
+# Process ID: 134684
+# Current directory: D:/Users/Xilinx_projects/udp_test/udp_test.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/Users/Xilinx_projects/udp_test/udp_test.sdk/webtalk/webtalk.log
+# Journal file: D:/Users/Xilinx_projects/udp_test/udp_test.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
+# webtalk_init -webtalk_dir D:\\Users\\Xilinx_projects\\udp_test\\udp_test.sdk\\webtalk
+# webtalk_register_client -client project
+# webtalk_add_data -client project -key date_generated -value "2019-11-09 15:42:30" -context "software_version_and_target_device"

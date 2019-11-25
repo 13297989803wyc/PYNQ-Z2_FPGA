@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;udp_sever/src/sys_intr&apos; to &apos;sys_intr.c&apos;" description="Rename resource &apos;sys_intr&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/sys_intr" name="sys_intr.c" stamp="1571545942427" updateReferences="true"/>
+</session>

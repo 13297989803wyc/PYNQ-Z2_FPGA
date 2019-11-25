@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="D:\vivado\PRO\udp_test_v4.7_Verilog\udp_test\udp_test.sdk\Lidar3Dbuild\Debug" key="bootgen_files_selection"/>
+	<item value="D:\vivado\PRO\udp_test_v4.7_Verilog\udp_test\udp_test.sdk\system_wrapper_hw_platform_0" key="program_fpga_view_bit_bmm_browse_key"/>
+	<item value="D:\vivado\PRO\udp_test_v4.7_Verilog\udp_test\udp_test.sdk\fsbl\Debug" key="zynq_flash_files_selection"/>
+	<item value="D:\vivado\PRO\udp_test_v4.7_Verilog\udp_test\udp_test.sdk\system_wrapper_hw_platform_0" key="last_stored_selection"/>
+</section>
